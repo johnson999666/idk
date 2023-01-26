@@ -1,0 +1,73 @@
+
+
+  body {background-color: blueviolet;
+    
+  }
+  hr {
+    background-color: red;
+    border-style: dotted;
+    border-color: grey;
+    border-width: 10px;
+    width: 10%;
+    
+  }
+  img {
+    height: 200px;
+    flex-wrap: wrap;
+  }
+
+h1 {color: green;
+    
+    display: inline;
+    flex-wrap: wrap;
+
+  
+}
+
+
+div {color: red;
+     width: 20;
+     
+  
+}
+td {color: red;
+    font: "Arial";
+    
+}
+.para {color: blue;
+       display: flex;
+       flex-wrap: wrap;
+       background-color: red;
+       display: inline;
+       
+  
+}
+.title {color: red;
+        background-color: blue;
+        position: absolute;
+        top: 100;
+        left: 100;
+        
+        align-content: center;
+        
+        
+       }
+.pg4body {color: orange;
+          display: flex;
+          flex-shrink: 0;
+          align-content: center;
+          
+          position: sticky;
+          top: 0;
+          
+  
+}
+h3 {display: flex;
+    flex-direction: column;
+    
+  
+}
+
+
+
+
