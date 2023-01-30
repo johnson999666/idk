@@ -1,37 +1,29 @@
-
-
-<!DOCTYPE html>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="uf-8">
-<center>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <a href="index.html"><h1>Home</h1></a>
+      
+    </head>
   
+    <body class="codeBody">
+      <h1 class= "codeTitle">Libraries</h1>
+      <h3 class= "title2">Pandas</h3>
+      <pre class="code">import pandas
 
+data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+grey_squirrels_count = len(data[data["Primary Fur Color"] == "Gray"])
+red_squirrels_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+black_squirrels_count = len(data[data["Primary Fur Color"] == "Black"])
+print(grey_squirrels_count)
+print(red_squirrels_count)
+print(black_squirrels_count)
 
-<h1><em>JAMIE SITE</em></h1>
-<link rel="stylesheet" href="style.css"
-<img src="https://www.w3schools.com/html/img_chania.jpg" alt="Flowers in Chania">
+data_dict = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "Count": [grey_squirrels_count, red_squirrels_count, black_squirrels_count]
+}
 
-
-
-
-
-<h2>WELCOME</h2>
-</center>
-
-
-
-  <tr>
-    <td>Web Development</td><td>⭐⭐</td>
-
-
-  </tr>
-</body>
-
-</table>
-<h3><a href="about.html">the second page</a></h3>
-<h3><a href="page2.html">page 3</a></h3>
-<h3><a href="page4.html">page 4</a></h3>
-
-<a target="_blank" href="https://www.google.com/">find more info here</a>
+df = pandas.DataFrame(data_dict)
+df.to_csv("squirrel_count.csv")</pre>
+    </body>
+</html>
